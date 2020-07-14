@@ -9,7 +9,7 @@ export default class AddCategoryIdToTransactions1594610898788
   implements MigrationInterface {
   public async up(queryRunner: QueryRunner): Promise<void> {
     await queryRunner.addColumn(
-      'transaction',
+      'transactions',
       new TableColumn({
         name: 'category_id',
         type: 'uuid',
